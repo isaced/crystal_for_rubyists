@@ -1,10 +1,10 @@
 \newpage
 
-# 为什么是 Crystal?
+# 为什么是 Crystal？
 
 也许你已经在写 Ruby，并且作为主要生产工具，并享受于此。为什么还要了解 Crystal？
 
-让我们花一分钟回顾一下 Ruby：最大的弱点是什么？对于我来说有以下三点：
+让我们花一分钟回顾一下 Ruby 最大的弱点是什么？对于我来说有以下三点：
 
 -   并发
 -   速度
@@ -25,13 +25,13 @@ Ruby 有哪些很酷的地方?
 
 现在：Crystal 不是很完美，但正在变得更好。但重点是*学习*，使用一种非常熟悉但又不同的语言，可以学会很多东西。
 
-用 Crystal 写一个 "Hello World" ：
+用 Crystal 来一个 "Hello World" ：
 
 ```ruby
 puts "Hello, world!"
 ```
 
-Crystal 的并发 "Hello World" ：
+Crystal 并发版 "Hello World" ：
 
 ```ruby
 channel = Channel(String).new
@@ -43,7 +43,7 @@ channel = Channel(String).new
 end
 ```
 
-Ruby 可能会写成这个样子:
+Ruby 可能会是这个样子:
 
 
 ```ruby
@@ -56,7 +56,7 @@ end.each(&:join)
 
 差不多了，不过请注意与 Ruby *类似*的地方 ：
 
--   相同的语法
+-   语法相同
 -   变量虽然是静态类型的，但有类型推导，所以我们不需要声明类型
 
 还是有一些 *不同* ：
