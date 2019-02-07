@@ -20,6 +20,10 @@ Crystal For Rubyists 简体中文
 - 第九章：宏和元编程
 - 第十章：C 语言绑定
 
+### 原文 Original
+
+- [crystalforrubyists.com](http://crystalforrubyists.com)
+
 ### 许可证 License
 
 AGPLv3
