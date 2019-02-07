@@ -9,8 +9,8 @@ Crystal For Rubyists 简体中文
 
 ### 目录 Index
 
-- [第一章：为什么是 Crystal？](/book/chapter-01.md)
-- 第二章：安装 Crystal
+- 第一章：[为什么是 Crystal？](/book/chapter-01.md)
+- 第二章：[安装 Crystal](/book/chapter-02.md)
 - 第三章：编写你的第一个 Crystal 程序
 - 第四章：创建一个新项目
 - 第五章：测试
