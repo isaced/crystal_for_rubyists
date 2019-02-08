@@ -13,7 +13,7 @@ Crystal For Rubyists 简体中文
 - 第二章：[安装 Crystal](/book/chapter-02.md)
 - 第三章：[编写你的第一个 Crystal 程序](/book/chapter-03.md)
 - 第四章：[创建一个新项目](/book/chapter-04.md)
-- 第五章：测试
+- 第五章：[测试](/book/chapter-05.md)
 - 第六章：FizzBuzz 问题
 - 第七章：类型和方法重载
 - 第八章：并发和通道
