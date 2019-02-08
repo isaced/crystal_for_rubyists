@@ -1,14 +1,12 @@
 \newpage
 
-# Testing
+# 测试
 
-Rubyists love testing, so before we go any farther, let's talk about
-testing. In Crystal, there is a testing framework built in, and it's
-named `spec`. It's pretty similar to `RSpec`.
+Rubyists 喜欢测试，所以在我们走向远方之前，让我们先谈谈测试。Crystal 又一个内置的测试框架叫 `spec`，它和 `RSpec` 非常相似。
 
-Let's continue with the project we created in Chapter 04.
+让我们继续第四章创建的项目
 
-As you remember `crystal` created this project structure for us.
+`crystal` 为我们创建了项目结构
 
     $ cd sample && tree
     -- LICENSE
@@ -22,13 +20,11 @@ As you remember `crystal` created this project structure for us.
         -- version.cr
       -- sample.cr
 
-Did you see that `spec` folder? Yes, as you guess Crystal created this folder and the first spec for us.
-In Crystal a file is tested with corresponding `_spec` file. Since we named our project as `sample` it created a file named `sample.cr`
-and the corresponding spec with `spec/sample_spec.cr`.
+看到 `spec` 这个目录了吗？ 是的 Crystal 为我们创建了这个文件夹和第一个 spec 测试文件。在 Crystal 里一个文件通过对应的 `_spec` 文件进行测试，因为我们项目的命名为 `sample`，对应创建了一个文件名为 `sample.cr` 和其 `spec/sample_spec.cr` 的 spec 测试文件。
 
-By the way, in this context `spec` and `unit test` means the same so we can use them interchangeably.
+还有一点，在这里 `spec` 和 `unit test` 是同样意思。
 
-Without further ado lets open up `spec/sample_spec.cr`
+让我们打开 `spec/sample_spec.cr`
 
 ```ruby
 require "./spec_helper"
@@ -42,18 +38,18 @@ describe Sample do
 end
 ```
 
-Now this file is pretty interesting. There a three important keywords, `describe`, `it` and `should`.
+现在这个文件非常有趣，有三个重要的关键字 `describe`、`it`、`should`。
 
-Those keywords are only used in `spec`s with the following purposes.
+这些关键字用于 `spec` 且有以下含义：
 
-- `describe` lets you group related specs.
-- `it` is used for defining a spec with the given title in between "".
-- `should` is used for making assumptions about the spec.
+- `describe` 对 specs 进行归组
+- `it` 在双引号间用于给 spec 一个标题定义.
+- `should` 用于对 spec 作出假设
 
-As you can see this file has a group `describe`d as `Sample` and `it` has one spec with the title of `works` which makes the
+如你所见这个文件有一个 `describe` 组名为 `Sample`，`it` 给了一个标题为 `works`， which makes the
 assumption that false `should` equal true.
 
-You might be asking 'How do we run these tests?'. Well `crystal` command to the rescue.
+你也许会问 “我们怎么运行这些测试？”，答案当然是 `crystal` 命令。
 
     $ crystal spec
     F
@@ -75,8 +71,7 @@ You might be asking 'How do we run these tests?'. Well `crystal` command to the 
 
     crystal spec ./spec/sample_spec.cr:6 # Sample works
 
-Yay! We got a failing(red) test. Reading the output we can easily find which spec failed.
-Here it's the spec within the group of `Sample` titled `works` a.k.a `Sample works`. Let's make it pass(green).
+Yay! 我们的测试失败（红色）了，阅读输出我们可以很容易知道是哪个测试（spec）失败了，`Sample` 组里标题为 `works` 的测试，也就是 `Sample works`，好了让我们来让其通过。
 
 ```ruby
 require "./spec_helper"
@@ -90,7 +85,7 @@ describe Sample do
 end
 ```
 
-Rerun the specs.
+重新运行测试（spec）
 
     $ crystal spec
 
@@ -99,4 +94,4 @@ Rerun the specs.
     Finished in 0.63 milliseconds
     1 examples, 0 failures, 0 errors, 0 pending
 
-Green! That's all you need to know to get started. Next up: FizzBuzz.
+绿色！这就是你开始前需要知道的全部内容，接下来下一章：FizzBuzz。
