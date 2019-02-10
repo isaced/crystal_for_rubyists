@@ -10,13 +10,13 @@
 > 印“Fizz”替代这个数.同理如果遇到5的倍数打印“Buzz”替代这个数.如果既
 > 是3也是5的倍数那么打印“FizzBuzz”替代这个数。
 
-这个程序为面试官检验你的crystal基础如:循环,测试，标准输出打印,等其他基础知识提供了很好的依据。
+这个程序为面试官检验你的 crystal 基础如:循环,测试，标准输出打印,等其他基础知识提供了很好的依据。
 
 首先让我们创建一个项目.
 
     $ crystal init app fizzbuzz
 
-然后写我们的第一个失败(failing)测试,打开 `/spec/fizzbuz_spec.cr`
+然后写我们的第一个失败( failing )测试,打开 `/spec/fizzbuz_spec.cr`
 
 ```ruby
 require "./spec_helper"
@@ -46,7 +46,7 @@ def div_by_three(n)
 end
 ```
 
-与ruby类似,最后一个语句的值被返回。
+与 ruby 类似,最后一个语句的值被返回。
 
 TDD的意思是做最简单的事,现在我们定义了一个方法,让我们编译并且运行:
 
@@ -132,7 +132,7 @@ end
 ```
 
 记住,最后一个语句的值会被返回。
-好啦，让我们TDD两个方法divide_by_five和divide_by_three,他们的原理是一样的,
+好啦，让我们TDD两个方法 divide_by_five 和 divide_by_three,他们的原理是一样的,
 但是下面的代码要试着写出完整程序了.一旦你看到了他们，说明你已经准备好了.
 
 
@@ -149,7 +149,7 @@ end
     Finished in 0.61 milliseconds
     6 examples, 0 failures, 0 errors, 0 pending
 
-好啦,现在让我们讨论下主要环节。有了编写FizzBuzz的工具,让我们把它跑起来,第一件事就是打印数字1到100。很简单
+好啦,现在让我们讨论下主要环节。有了编写 FizzBuzz 的工具,让我们把它跑起来,第一件事就是打印数字1到100。很简单
 
 ```ruby
 100.times do |num|

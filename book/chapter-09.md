@@ -1,18 +1,13 @@
 \newpage
 
-# Macros and Metaprogramming
+# 宏和元编程
 
-We love Ruby because of its' dynamic nature and metaprogramming! Unlike Ruby, Crystal is a compiled language.
-That's why there are some key differences.
+我们喜欢 ruby 是因为他的动态性和元编程，可是和 ruby 不一样的是,crystal 是一种编译语言，这就导致了他们之间有一些关键性的区别:
 
-- There's no `eval`.
-- There's no `send`.
+- 没有 `eval`.
+- 没有 `send`.
 
-In Crystal we use `Macro`s to achieve this kind of behaviour and metaprogramming. You can think of `Macro`s as 'Code that writes/modifies code'.
-
-P.S: `Macro`s are expanded into code at compile-time.
-
-Check this.
+在 crystal 中,我们使用 macro 来获得上述两个行为和元编程,你可以把 macro 当做修饰代码的代码。P.S.编译期间 macro 被扩展成了代码.看这个:
 
 ```ruby
 macro define_method(name, content)
@@ -31,7 +26,7 @@ define_method foo, 1
 foo # => 1
 ```
 
-In the example we created a macro named `define_method` and we just called that macro like a normal method. That macro expanded into
+在这个例子中，我们创建了一个 macro 名叫 define_method.我们只是把 macro 称为一个普通的方法。然后 macro 就会被扩展成：
 
 ```ruby
   def foo
@@ -39,8 +34,7 @@ In the example we created a macro named `define_method` and we just called that 
   end
 ```
 
-Pretty cool! We got `eval` behaviour at compile-time.
+酷！我们居然在编译期间得到了 eval 行为。
+Macro 很强大，但是有一条规则你不能打破:
 
-Macros are really powerful but there's one rule that you can't break.
-
-***A macro should expand into a valid Crystal program***
+***一个 macro 应该被扩展到一个合法的 crystal 项目中。***
