@@ -1,12 +1,12 @@
 \newpage
 
-# ÀàÐÍÓë·½·¨ÖØÔØ
+# ç±»åž‹ä¸Žæ–¹æ³•é‡è½½
 
-Crystal ºÍ ruby ºÜÏñ£¬µ«Ëü²»ÊÇ ruby ¡£
+Crystal å’Œ Ruby å¾ˆåƒï¼Œä½†å®ƒä¸æ˜¯ Rubyã€‚
 
-Crystal ÊÇÒ»ÖÖ¾²Ì¬Êý¾ÝÀàÐÍºÍÐè±àÒëµÄÓïÑÔ¡£´ó¶àÊýÊ±ºò£¬Äã²»ÓÃÖ¸¶¨Êý¾ÝÀàÐÍ¡£ÒòÎª±àÒëÆ÷×Ô¼ºÄÜÍÆ¶Ï³öÊý¾ÝÀàÐÍ¡£
+Crystal æ˜¯ä¸€ç§é™æ€æ•°æ®ç±»åž‹å¹¶ä¸”éœ€è¦ç¼–è¯‘çš„è¯­è¨€ã€‚å¤§å¤šæ•°æ—¶å€™ï¼Œä½ ä¸ç”¨æŒ‡å®šæ•°æ®ç±»åž‹ã€‚å› ä¸ºç¼–è¯‘å™¨è¶³å¤Ÿæ™ºèƒ½å¯ä»¥è¿›è¡Œ`ç±»åž‹æŽ¨æ–­`ã€‚
 
-ºÃ£¬¼ÈÈ»ÕâÑù£¬ÄÇÃ´ÎÒÃÇÎªÊ²Ã´ÐèÒªÊý¾ÝÀàÐÍÄØ?ÈÃÎÒÃÇ´ÓÏÂÃæµÄÀý×Ó¿ªÊ¼:
+å¥½ï¼Œæ—¢ç„¶è¿™æ ·ï¼Œé‚£ä¹ˆæˆ‘ä»¬ä¸ºä»€ä¹ˆéœ€è¦æ•°æ®ç±»åž‹å‘¢ï¼Ÿè®©æˆ‘ä»¬ä»Žä¸‹é¢çš„ä¾‹å­å¼€å§‹:
 
 ```ruby
 def add(x, y)
@@ -16,13 +16,13 @@ end
 add 3, 5 # 8
 ```
 
-ÉÏÃæµÄÕâÐ©ÔÚ ruby ÖÐÊÇÒ»ÑùµÄ,ÎÒÃÇÖ»ÊÇ¶¨ÒåÁËÒ»¸ö¿ÉÒÔÁ½¸öÊý×ÖÇóºÍµÄ·½·¨,ÒªÊÇÎÒÃÇÊÔ×ÅÇóÒ»¸öÊý×ÖºÍ×Ö·û´®µÄºÍÄØ£¿
+ä¸Šé¢çš„è¿™äº›åœ¨ Ruby ä¸­æ˜¯ä¸€æ ·çš„ï¼Œæˆ‘ä»¬åªæ˜¯å®šä¹‰äº†ä¸€ä¸ªè®©ä¸¤ä¸ªæ•°å­—æ±‚å’Œçš„æ–¹æ³•ï¼Œè¦æ˜¯æˆ‘ä»¬è¯•ç€æ±‚å’Œä¸€ä¸ªæ•°å­—å’Œå­—ç¬¦ä¸²å‘¢ï¼Ÿ
 
 ```ruby
 add 3, "Serdar"
 ```
 
-ÏÈÈÃÎÒÃÇÔÚ ruby ÀïÃæÊÔÒ»ÊÔ
+å…ˆè®©æˆ‘ä»¬åœ¨ Ruby é‡Œé¢è¯•ä¸€è¯•
 
 ```ruby
 types.cr:2:in `+': String can't be coerced into Fixnum (TypeError)
@@ -30,9 +30,9 @@ types.cr:2:in `+': String can't be coerced into Fixnum (TypeError)
 	from types.cr:5:in `<main>'
 ```
 
-µÃµ½ÁËÒ»¸ö typeError,µ«ÊÇÎÒÃÇ²»ÓÃÔÚ ruby ÖÐ¹ØÐÄÀàÐÍ°¡¡£ÆäÊµÕâÊÇÒ»¸öÔËÐÐÆÚ¼ä´íÎó( runtime error ).ÒâÎ¶×ÅÄãµÄ³ÌÐòÔÚÔËÐÐÆÚ¼ä±ÀÀ£¡£
+å¾—åˆ°äº†ä¸€ä¸ª `TypeError`ï¼Œä½†æ˜¯æˆ‘ä»¬ä¸ç”¨åœ¨ Ruby ä¸­å…³å¿ƒç±»åž‹å•Šï¼Œå…¶å®žè¿™æ˜¯ä¸€ä¸ª`è¿è¡Œæ—¶é”™è¯¯`ï¼Œæ„å‘³ç€ä½ çš„ç¨‹åºä¼šåœ¨è¿è¡ŒæœŸé—´å´©æºƒã€‚
 
-È»ºóÎÒÃÇÔÚ crystal ÀïÃæÊÔÒ»ÊÔ
+ç„¶åŽæˆ‘ä»¬åœ¨ Crystal é‡Œé¢è¯•ä¸€è¯•
 
     Error in ./types.cr:5: instantiating 'add(Int32, String)'
 
@@ -56,10 +56,9 @@ types.cr:2:in `+': String can't be coerced into Fixnum (TypeError)
     x + y
       ^
 
-ºÃÀ²,ÉÏÃæµÄÊä³öÓï¾ä¿´ÆðÀ´Í¦ÏÅÈËµÄ£¬²»¹ýÊµ¼ÊÉÏËüÃÇºÜÇ¿´ó£¬ÎÒÃÇµÄ crystal ËäÈ»Ã»ÓÐ±àÒëµ«ÈÔÈ»¸æËßÎÒÃÇ crystal ÀïÃ»ÓÐ¶ÔÓÚ¡±Int32#+()¡±·½·¨µÄÖØÔØ,
-²¢ÇÒÏòÎÒÃÇÕ¹Ê¾ÁËÆäËû¿ÉÄÜµÄÖØÔØÀàÐÍ¡£crystal µÄÕâÖÖ»úÖÆ¾ÍÏàµ±ÓÚÎÒÃÇ³£ËµµÄ¡°±àÒëÆÚ¼ä´íÎó¡±£¬ÒâÎ¶×ÅÎÒÃÇµÄ´úÂëÃ»ÓÐ±àÒë³É¹¦£¬²¢ÇÒÔÚ³ÌÐòÔËÐÐÖ®Ç°¾Í²¶×½µ½ÁË´íÎó¡£
+ä¸Šé¢çš„è¾“å‡ºè¯­å¥çœ‹èµ·æ¥æŒºå“äººçš„ï¼Œä¸è¿‡å®žé™…ä¸Šå®ƒä»¬å¾ˆå¼ºå¤§ï¼Œæˆ‘ä»¬çš„ Crystal è™½ç„¶æ²¡æœ‰ç¼–è¯‘ä½†ä»ç„¶å‘Šè¯‰æˆ‘ä»¬ Crystal é‡Œæ²¡æœ‰å¯¹ `Int32#+`æ–¹æ³•é‡è½½ï¼Œå¹¶ä¸”å‘æˆ‘ä»¬å±•ç¤ºäº†å…¶ä»–å¯èƒ½çš„é‡è½½ç±»åž‹ï¼ŒCrystal çš„è¿™ç§æœºåˆ¶å°±ç›¸å½“äºŽæˆ‘ä»¬å¸¸è¯´çš„ `ç¼–è¯‘æ—¶é”™è¯¯`ï¼Œæ„å‘³ç€æˆ‘ä»¬çš„ä»£ç æ²¡æœ‰ç¼–è¯‘æˆåŠŸï¼Œå¹¶ä¸”åœ¨ç¨‹åºè¿è¡Œä¹‹å‰å°±æ•æ‰åˆ°äº†é”™è¯¯ã€‚
 
-ÏÖÔÚÈÃÎÒÃÇÌí¼ÓÒ»Ð©Êý¾ÝÀàÐÍ²¢ÇÒÔÚ·½·¨ÖÐÏÞÖÆ³É number ÀàÐÍ.
+çŽ°åœ¨è®©æˆ‘ä»¬æ·»åŠ ä¸€äº›æ•°æ®ç±»åž‹å¹¶ä¸”åœ¨æ–¹æ³•ä¸­é™åˆ¶æˆ `Number` ç±»åž‹.
 
 ```ruby
 def add(x : Number, y : Number)
@@ -69,7 +68,7 @@ end
 puts add 3, "Serdar"
 ```
 
-ÔËÐÐ
+è¿è¡Œ
 
     Error in ./types.cr:5: no overload matches 'add' with types Int32, String
     Overloads are:
@@ -78,14 +77,11 @@ puts add 3, "Serdar"
     puts add 3, "Serdar"
          ^~~
 
-Ì«°ôÁË,ÎÒÃÇµÄ³ÌÐòÓÖÒ»´ÎÃ»ÄÜ±àÒë³É¹¦,µ«Õâ´ÎµÄ´íÎóÊä³ö¸ü¶ÌºÍ¸ü×¼È·¡£ÎÒÃÇÖ»ÊÇÔÚxºÍyÖÐÊ¹ÓÃÁËÀàÐÍÏÞÖÆ¡£Crystal ¾ÍÒÑ¾­´ÏÃ÷µ½Ëü¿ÉÒÔ×èÖ¹ÎÒÃÇÊ¹ÓÃ´ø×Ö·û´®µÄ·½·¨¡£
+å¤ªæ£’äº†ï¼Œæˆ‘ä»¬çš„ç¨‹åºåˆä¸€æ¬¡æ²¡èƒ½ç¼–è¯‘æˆåŠŸï¼Œä½†è¿™æ¬¡çš„é”™è¯¯è¾“å‡ºæ›´çŸ­å’Œæ›´å‡†ç¡®ã€‚æˆ‘ä»¬åªæ˜¯åœ¨ `x` å’Œ `y` ä¸­ä½¿ç”¨äº†ç±»åž‹é™åˆ¶ã€‚Crystal å°±å·²ç»èªæ˜Žåˆ°å®ƒå¯ä»¥é˜»æ­¢æˆ‘ä»¬ä½¿ç”¨å¸¦`å­—ç¬¦ä¸²`çš„æ–¹æ³•ã€‚
 
-## ·½·¨ÖØÔØ
+## æ–¹æ³•é‡è½½
 
-
-ÎÒÃÇ¸Õ²Å¿´µ½ÁËÒ»Ð©ÖØÔØ£¬ÏÖÔÚÈÃÎÒÃÇÌ¸Ì¸·½·¨ÖØÔØ¡£
-·½·¨ÖØÔØ¾ÍÊÇÔÚÒ»Ð©·½·¨Ö®¼ä³öÏÖµÄÒ»¸öÏÖÏó£¬ËäÈ»ËûÃÇ¿ÉÒÔÓµÓÐÏàÍ¬·½·¨Ãû³Æ£¬µ«ÊÇËûÃÇµÄ²ÎÊýµÄÊýÁ¿È´²»Í¬¡£ËùÒÔÕâÐ©·½·¨Êµ¼ÊÉÏÊÇ²»Í¬µÄ¡£
-ÈÃÎÒÃÇÖØÔØÎÒÃÇµÄ add ·½·¨,ÈÃËû±ä³É¿ÉÒÔ½ÓÊÜ string ÀàÐÍ¡£
+æˆ‘ä»¬åˆšæ‰çœ‹åˆ°äº†ä¸€äº›é‡è½½ï¼ŒçŽ°åœ¨è®©æˆ‘ä»¬è°ˆè°ˆæ–¹æ³•é‡è½½ï¼Œæ–¹æ³•é‡è½½å°±æ˜¯åœ¨ä¸€äº›æ–¹æ³•ä¹‹é—´å‡ºçŽ°çš„ä¸€ä¸ªçŽ°è±¡ï¼Œè™½ç„¶ä»–ä»¬å¯ä»¥æ‹¥æœ‰ç›¸åŒæ–¹æ³•åç§°ï¼Œä½†æ˜¯ä»–ä»¬çš„å‚æ•°çš„æ•°é‡å´ä¸åŒã€‚æ‰€ä»¥è¿™äº›æ–¹æ³•å®žé™…ä¸Šæ˜¯ä¸åŒçš„ï¼Œè®©æˆ‘ä»¬é‡è½½æˆ‘ä»¬çš„ `add` æ–¹æ³•ï¼Œè®©ä»–å˜æˆå¯ä»¥æŽ¥å—ä¸€ä¸ªå­—ç¬¦ä¸²ã€‚
 
 ```ruby
 def add(x : Number, y : Number)
@@ -101,10 +97,10 @@ puts add 3, 5
 puts add 3, "Serdar"
 ```
 
-Let's run it.
+è¿è¡Œèµ·æ¥
 
     $ crystal types.cr
     8
     3Serdar
 
-ÒÔÉÏ¾ÍÊÇÊµ¼Ê²Ù×÷ÖÐµÄ·½·¨ÖØÔØ£¬crystal ÄÜ¹»·Ö±æ³öÎÒÃÇËùËµµÄ´øÓÐÊý×ÖµÄ·½·¨ºÍ´øÓÐ×Ö·û´®µÄ·½·¨µÄÇø±ð¡£²¢ÇÒÄÜ¹»µ÷ÓÃ×¼È·µØµ÷ÓÃËûÃÇ£¬ÖØÔØ·½·¨µÄÊýÁ¿ÊÇ²»ÊÜÏÞÖÆµÄ¡£
+ä»¥ä¸Šå°±æ˜¯å®žé™…æ“ä½œä¸­çš„æ–¹æ³•é‡è½½ï¼ŒCrystal èƒ½å¤Ÿåˆ†è¾¨å‡ºæˆ‘ä»¬æ‰€è¯´çš„å¸¦æœ‰æ•°å­—çš„æ–¹æ³•å’Œå¸¦æœ‰å­—ç¬¦ä¸²çš„æ–¹æ³•çš„åŒºåˆ«ï¼Œå¹¶ä¸”èƒ½å¤Ÿè°ƒç”¨å‡†ç¡®åœ°è°ƒç”¨ä»–ä»¬ï¼Œæ‚¨å¯ä»¥æ ¹æ®éœ€è¦å®šä¹‰å¤šä¸ªé‡è½½æ–¹æ³•ã€‚
