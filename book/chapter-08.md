@@ -1,8 +1,8 @@
 \newpage
 
-# ²¢·¢Óë¹ÜµÀ
+# å¹¶å‘ä¸Žç®¡é“
 
-»¹¼ÇµÃµÚÒ»ÕÂ½ÚÂð,ÎÒÃÇ×öÁËÒ»¸ö²¢·¢µÄ hello world.»Ø¹ËÒ»ÏÂ:
+è¿˜è®°å¾—ç¬¬ä¸€ç« å—ï¼Œæˆ‘ä»¬å†™äº†ä¸€ä¸ªå¹¶å‘çš„ Hello Worldï¼Œå›žé¡¾ä¸€ä¸‹:
 
 ```ruby
 channel = Channel(String).new
@@ -14,20 +14,20 @@ channel = Channel(String).new
 end
 ```
 
-ÔÚ crystal ÖÐÎÒÃÇÓÃ¹Ø¼ü×Ö spawn ÁîÒ»Ð©ÊÂÎñ¿ÉÒÔÔÚÃ»ÓÐËøËÀÖ÷Ïß³ÌµÄÇé¿öÏÂºóÌ¨ÔËÐÐ¡£
-ÎªÁË´ïµ½ÕâÑùµÄÄ¿µÄ,spawn ´´½¨ÁËÒ»¸öÇáÁ¿Ïß³ÌÃû½Ð Fiber (ÏËÎ¬),´´½¨ fiber ³É±¾µÍ£¬ËùÒÔÄã¿ÉÒÔÔÚÒ»¸öµ¥ºËÐÄ( core )ÖÐ´´½¨ÉÏÍòÌõ fiber.
-Ok,¼ÈÈ»ÎÒÃÇ¿ÉÒÔÈÃ fiber ºóÌ¨ÔËÐÐ£¬ÄÇÈç¹ûÎÒÃÇÏëÒª fiber µÄ·µ»ØÖµÄØ.ÕâÊ±£¬¹ÜµÀ( Channel )¾ÍÅÉÉÏÓÃ³¡ÁË
+åœ¨ Crystal ä¸­æˆ‘ä»¬ç”¨å…³é”®å­— `spawn` åœ¨åŽå°è¿è¡Œè€Œä¸é˜»å¡žä¸»çº¿ç¨‹ã€‚
+ä¸ºäº†è¾¾åˆ°è¿™æ ·çš„ç›®çš„ï¼Œ`spawn` åˆ›å»ºäº†ä¸€ä¸ªè½»é‡çº§çº¿ç¨‹åå« `Fiber`ï¼Œ`Fiber` åˆ›å»ºæˆæœ¬éžå¸¸ä½Žï¼Œä½ å¯ä»¥åœ¨ä¸€ä¸ªå•æ ¸ä¸Šåˆ›å»ºä¸Šä¸‡æ¡ `Fiber`ã€‚
+Okï¼Œæ—¢ç„¶æˆ‘ä»¬å¯ä»¥è®© `Fiber` åŽå°è¿è¡Œï¼Œé‚£å¦‚æžœæˆ‘ä»¬æƒ³è¦ `Fiber` è¿”å›žå€¼å‘¢ï¼Œè¿™æ—¶ç®¡é“ (Channel) å°±æ´¾ä¸Šç”¨åœºäº†
 
 
-## Channel
+## ç®¡é“ Channel
 
-¹ËÃûË¼Òå,Channel ¾ÍÊÇÒ»¸ù½ÓÊÕ·½ºÍÊäËÍ·½µÄ¹ÜµÀ,ËùÒÔ Channel ¿ÉÒÔÍ¨¹ý send ºÍ receive ·½·¨±Ë´Ë½»»¥¡£ÈÃÎÒÃÇÒ»²½Ò»²½µÄ·ÖÎöÉÏÃæµÄ´úÂë.
+é¡¾åæ€ä¹‰ï¼Œ`Channel` å°±æ˜¯ä¸€æ ¹å‘é€è€…å’ŒæŽ¥å—è€…ä¹‹é—´çš„ç®¡é“ï¼Œæ‰€ä»¥ `Channel` å¯ä»¥é€šè¿‡ `send` å’Œ `receive` æ–¹æ³•è¿›è¡Œé€šä¿¡ï¼Œè®©æˆ‘ä»¬ä¸€æ­¥ä¸€æ­¥çš„åˆ†æžä¸Šé¢çš„ä¾‹å­ï¼š
 
 ```ruby
 channel = Channel(String).new
 ```
 
-ÎÒÃÇÓÃ Channel(String).new ´´½¨ÁËÒ»¸ö¹ÜµÀ,ÐèÒª×¢ÒâµÄÊÇÎÒÃÇÕýÔÚ´´½¨Ò»¸ö½«»á send ºÍ receive ×Ö·û´®ÀàÐÍµÄÏûÏ¢µÄ¹ÜµÀ¡£
+æˆ‘ä»¬ç”¨ `Channel(String).new` åˆ›å»ºä¸€ä¸ªç®¡é“ï¼Œéœ€è¦æ³¨æ„çš„æ˜¯æˆ‘ä»¬æ­£åœ¨åˆ›å»ºä¸€ä¸ªå°†ä¼š `send` å’Œ `receive` å­—ç¬¦ä¸²ç±»åž‹çš„æ¶ˆæ¯çš„ç®¡é“ã€‚
 
 ```ruby
 10.times do
@@ -38,8 +38,7 @@ channel = Channel(String).new
 end
 ```
 
-ÎÒÃÇÏÈ²»¿´Ñ­»·£¬ÎÒÃÇÕý´¦ÓÚ spawn ÖÐÏò¹ÜµÀ·¢ËÍÊý¾Ý¡£Äã¿ÉÄÜ»áÎÊ¡°ÎªÊ²Ã´ÎÒÃÇÒªÔÚºóÌ¨·¢ËÍÊý¾Ý¡±.
- send ·½·¨ÊÇÒ»ÖÖËøËÀ²Ù×÷£¬Èç¹ûÎÒÃÇÔÚ main ½ø³ÌÀïÃæÊ¹ÓÃËü¾Í»áÓÀÔ¶ËøËÀÕû¸ö³ÌÐò¡£¿´ÏÂÕâ¸ö:
+æˆ‘ä»¬å…ˆä¸çœ‹å¾ªçŽ¯ï¼Œæˆ‘ä»¬æ­£ `spawn` ä¸­å‘ç®¡é“å‘é€æ•°æ®ï¼Œä½ å¯èƒ½ä¼šé—® â€œä¸ºä»€ä¹ˆæˆ‘ä»¬è¦åœ¨åŽå°å‘é€æ•°æ®ï¼Ÿâ€ï¼Œ`send` æ–¹æ³•æ˜¯ä¸€ç§é˜»å¡žæ“ä½œï¼Œå¦‚æžœæˆ‘ä»¬åœ¨ä¸»è¿›ç¨‹é‡Œé¢ä½¿ç”¨å®ƒå°±ä¼šæ°¸è¿œé”æ­»æ•´ä¸ªç¨‹åºã€‚çœ‹ä¸‹è¿™ä¸ª:
 
 ```ruby
 channel = Channel(String).new
@@ -47,7 +46,7 @@ channel.send "Hello?" # This blocks the program execution
 puts channel.receive
 ```
 
-ÉÏÃæµÄ³ÌÐòµÄÊä³öÊÇÊ²Ã´ÄØ?Êµ¼ÊÉÏÕâ¸ö³ÌÐò²¢Ã»ÓÐÖ´ÐÐÍê,ÒòÎªËü±» send ·½·¨ËøËÀÁË,ºÃÁËÎÒÃÇÏÖÔÚÖªµÀÁË,¼ÌÐø!
+ä¸Šé¢çš„ç¨‹åºçš„è¾“å‡ºæ˜¯ä»€ä¹ˆå‘¢ï¼Ÿå®žé™…ä¸Šè¿™ä¸ªç¨‹åºå¹¶æ²¡æœ‰æ‰§è¡Œå®Œï¼Œå› ä¸ºå®ƒè¢« `channel.send "Hello?"` é˜»å¡žäº†ï¼Œå¥½äº†æˆ‘ä»¬çŽ°åœ¨çŸ¥é“ä¸ºä»€ä¹ˆç”¨ `spawn` å‘é€æ¶ˆæ¯äº†ï¼Œç»§ç»­ï¼
 
 
 ```ruby
@@ -57,4 +56,4 @@ spawn {
 puts channel.receive
 ```
 
-ÎÒÃÇÖ»ÊÇÓÃ spawn ÔÚºóÌ¨ÖÐÍ¨¹ý¹ÜµÀ·¢ËÍÁËÒ»¸öÐÅÏ¢.È»ºóÎÒÃÇÓÃ channel.receive ½ÓÊÜËüµÄ·µ»Ø.Õâ¸öÀý×ÓÖÐÏûÏ¢ÊÇ ¡±hello?¡±,ËùÒÔ³ÌÐò´òÓ¡ hello? ²¢Íê³É.
+æˆ‘ä»¬åªæ˜¯ç”¨ `spawn` åœ¨åŽå°ä¸­é€šè¿‡ç®¡é“å‘é€äº†ä¸€ä¸ªä¿¡æ¯.ç„¶åŽæˆ‘ä»¬ç”¨ `channel.receive` æŽ¥å—å®ƒçš„è¿”å›žï¼Œè¿™ä¸ªä¾‹å­ä¸­æ¶ˆæ¯æ˜¯ `Hello?`ï¼Œæ‰€ä»¥ç¨‹åºæ‰“å° `Hello?` å¹¶ç»“æŸã€‚
