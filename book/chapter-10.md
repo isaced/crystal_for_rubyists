@@ -1,11 +1,9 @@
 \newpage
 
-# C°ó¶¨
+# C ç»‘å®š `Bindings`
 
-ºÜ¶àC¿â¶¼ºÜÓÐÓÃ£¬ÎÒÃÇÓ¦¸Ã³ä·ÖÀûÓÃËûÃÇ¶ø²»ÊÇÈ¥ÖØÐ´ËûÃÇ¡£
-ÔÚ crystal ÖÐ,½èÖú bindings À´Ê¹ÓÃÒÑ´æÔÚµÄC¿â³¬¼¶¼òµ¥,
-¼´Ê¹ÊÇ crystal ±¾Éí¶¼ÔÚÓÃC¿â.±ÈÈç:crystal Ê¹ÓÃ libpcre 
-À´ÊµÀý»¯ Regex.ÏÂÃæÊÇ Crystal ×Ô¼ºµ÷ÓÃ libpcre µÄÀý×Ó:
+å¾ˆå¤š C åº“éƒ½å¾ˆæœ‰ç”¨ï¼Œæˆ‘ä»¬åº”è¯¥å……åˆ†åˆ©ç”¨ä»–ä»¬è€Œä¸æ˜¯åŽ»é‡å†™ä»–ä»¬ã€‚
+åœ¨ Crystal ä¸­ï¼Œå€ŸåŠ© bindings æ¥ä½¿ç”¨å·²å­˜åœ¨çš„ C åº“è¶…çº§ç®€å•ï¼Œå³ä½¿æ˜¯ Crystal æœ¬èº«éƒ½åœ¨ç”¨ä¸€äº› C åº“ï¼Œæ¯”å¦‚ `libpcre` æ¥å®žä¾‹åŒ– `Regex`ï¼Œä¸‹é¢æ˜¯ Crystal é“¾æŽ¥ `libpcre` çš„ä¾‹å­:
 
 ```ruby
 @[Link("pcre")]
@@ -14,11 +12,9 @@ lib LibPCRE
 end
 ```
 
-Á¬½Ó libpcre ÄãÖ»ÐèÒª3ÐÐ´úÂë,ÎÒÃÇÊ¹ÓÃ lib ¹Ø¼ü×ÖÀ´°ÑÊôÓÚÍ¬Ò»¸ö¿âµÄ·½·¨ºÍÀàÐÍ·ÖÎªÒ»×é¡£
+é“¾æŽ¥ `libpcre` åªéœ€è¦ 3 è¡Œä»£ç ï¼Œæˆ‘ä»¬ä½¿ç”¨ `lib` å…³é”®å­—æ¥æŠŠå±žäºŽåŒä¸€ä¸ªåº“çš„æ–¹æ³•å’Œç±»åž‹åˆ†ä¸ºä¸€ç»„ï¼Œå¹¶ä¸”ä»Ž `Lib` å¼€å§‹ä½ çš„ C åº“å£°æ˜Žå¾ˆç®€å•ã€‚
 
-²¢ÇÒ´Ó Lib ¿ªÊ¼ÄãµÄC¿âÉùÃ÷ºÜÁ÷³©.
-
-ÏÖÔÚÎÒÃÇÓÃ fun ¹Ø¼ü×Ö°ó¶¨µ½C functions ÖÐ.
+çŽ°åœ¨æˆ‘ä»¬ç”¨ `fun` å…³é”®å­—ç»‘å®šåˆ° C å‡½æ•°ä¸­ã€‚
 
 ```ruby
 @[Link("pcre")]
@@ -28,8 +24,7 @@ lib LibPCRE
 end
 ```
 
-ÕâÀïÎÒÃÇÓÃ matching ÀàÐÍ°ó¶¨µ½ libpcre µÄ±àÒë function ÖÐ¡£Èç´Ë£¬
-¾ÍÄÜÔÚ crystal ´úÂëÖÐÇáËÉµØ»ñÈ¡ C function ÁË¡£
+è¿™é‡Œæˆ‘ä»¬ç”¨å¯¹åº”çš„ç±»åž‹ç»‘å®š `libpcre` ç¼–è¯‘å‡½æ•°ï¼Œå°±èƒ½åœ¨ Crystal ä»£ç ä¸­è½»æ¾åœ°è®¿é—®è¿™ä¸ªå‡½æ•°äº†ã€‚
 
 ```crystal
 LibPCRE.compile(..)
