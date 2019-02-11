@@ -1,25 +1,22 @@
-\newpage
+﻿\newpage
 
-# FizzBuzz
+# FizzBuzz 问题
 
-Of course, the first thing that your job interview for that cushy new
-Crystal job will task you with is building FizzBuzz. Let's do it!
+当然,当你接受面试的时候, Crystal 要你做的第一件事就是 FizzBuzz 问题！！！让我们开始吧
 
-If you're not familiar, FizzBuzz is a simple programming problem:
+如果你还不熟悉 FizzBuzz 的话,它其实是一个简单的编程问题:
 
-> "Write a program that prints the numbers from 1 to 100. But for multiples of
-> three print “Fizz” instead of the number and for the multiples of five print
-> “Buzz”. For numbers which are multiples of both three and five print
-> “FizzBuzz”."
+> 编写一个程序，打印数字 1 到 100.如果中途遇到 3 的倍数那么打
+> 印 “Fizz” 替代这个数，同理如果遇到 5 的倍数打印 “Buzz” 替代这个数，如果既
+> 是 3 也是 5 的倍数那么打印 “FizzBuzz” 替代这个数。
 
-This will give us a good excuse to go over some basics of Crystal: Looping,
-tests, printing to standard output, and a host of other simple things.
+这个程序为面试官检验你的 Crystal 基础如：循环、测试、标准输出打印，等其他基础知识提供了很好的依据。
 
-First, let's create our project.
+首先让我们创建一个项目.
 
     $ crystal init app fizzbuzz
 
-Let's write our first failing test. Open up `/spec/fizzbuz_spec.cr`
+然后写我们的第一个失败 (failing) 的测试，打开 `/spec/fizzbuz_spec.cr`
 
 ```ruby
 require "./spec_helper"
@@ -31,7 +28,7 @@ describe Fizzbuzz do
 end
 ```
 
-And run it:
+运行它:
 
     $ crystal spec
     Error in ./spec/fizzbuzz_spec.cr:7: undefined method 'div_by_three'
@@ -39,8 +36,7 @@ And run it:
     div_by_three(1).should eq(false)
 
 
-This makes sense: We haven't defined any method yet. Let's define
-one:
+这是因为：我们还没有定义任何方法，让我们定义一个:
 
 ```ruby
 require "./fizzbuzz/*"
@@ -50,9 +46,9 @@ def div_by_three(n)
 end
 ```
 
-Akin to Ruby, the value of the last expression gets returned.
+与 Ruby 类似，最后一个语句的值会被返回。
 
-TDD means do the simplest thing! Now that we've defined our method, let's compile and run our tests:
+TDD 的意思是做最简单的事，现在我们定义了一个方法，让我们编译并且运行：
 
     $  crystal spec
     .
@@ -61,7 +57,7 @@ TDD means do the simplest thing! Now that we've defined our method, let's compil
     1 examples, 0 failures, 0 errors, 0 pending
 
 
-Awesome! We pass! Let's write another test, and see what happens:
+真棒，我们通过了，再写另一个测试看看会发生什么
 
 ```ruby
 require "./spec_helper"
@@ -77,7 +73,7 @@ describe Fizzbuzz do
 end
 ```
 
-Run it!
+运行一下：
 
     $ crystal spec
 
@@ -100,7 +96,7 @@ Run it!
 
     crystal spec ./spec/fizzbuzz_spec.cr:8 # Fizzbuzz should divide 3 by 3
 
-We have 1 failure. Let's make this pass.
+有一个错误，解决它:
 
 ```ruby
 require "./fizzbuzz/*"
@@ -114,7 +110,7 @@ def div_by_three(n)
 end
 ```
 
-Run it.
+运行
 
     $ crystal spec
 
@@ -123,10 +119,11 @@ Run it.
     Finished in 0.61 milliseconds
     2 examples, 0 failures, 0 errors, 0 pending
 
-Awesome! This shows off how `else` work, as well. It's probably what you
-expected. Go ahead and try to refactor this into a one-liner.
+溜溜溜，这个展示了 “else” 如何工作，正如你想要的，试试把它重构成一行呢
 
-Done? How'd you do? Here's mine:
+看看我的:
+
+完成？你会怎么写，看看我的：
 
 ```ruby
 def div_by_three(n)
@@ -134,11 +131,9 @@ def div_by_three(n)
 end
 ```
 
-Remember, the value of the last expression gets returned.
+记住，最后一个语句的值会被返回。好啦，让我们 TDD 两个方法 `divide_by_five` 和 `divide_by_three`，他们的原理是一样的,
+但是下面的代码要试着写出完整程序了，一旦你看到了他们，说明你已经准备好了.
 
-Okay, now try to TDD out the `div_by_five` and `div_by_fifteen` methods. They
-should work the same way, but this will let you get practice actually
-writing it out. Once you see this, you're ready to advance:
 
     $ crystal spec -v
 
@@ -153,9 +148,7 @@ writing it out. Once you see this, you're ready to advance:
     Finished in 0.61 milliseconds
     6 examples, 0 failures, 0 errors, 0 pending
 
-Okay! Let's talk about the main program now. We've got the tools to
-build FizzBuzz, let's make it work. First thing we need to do is print
-out all the numbers from one to 100. It's easy!
+好啦，现在让我们讨论下主程序，有了编写 FizzBuzz 的工具，让我们把它跑起来，第一件事就是打印数字 1 到 100，很简单
 
 ```ruby
 100.times do |num|
@@ -163,12 +156,9 @@ out all the numbers from one to 100. It's easy!
 end
 ```
 
-Step one: print **something** 100 times. If you run this via
-`crystal build src/fizzbuzz.cr && ./fizzbuzz` you should see `num` printed
-100 times. Note that our tests didn't actually run. Not only are they not run,
-they're actually not even in the executable:
+第一步，打印 100 次，如果你通过这个： `crystal build src/fizzbuzz.cr && ./fizzbuzz` 运行，你会看见**数字**打印了100次。需要提醒的是我们的测试还没有运行，实际上不仅是没有运行，他们根本就不能执行，现在我们把两段代码耦合到一起:
 
-Now we can put the two together:
+现在我们可以把两者结合起来:
 
 ```ruby
 100.times do |num|
@@ -188,7 +178,7 @@ Now we can put the two together:
 end
 ```
 
-Because the `if` returns a value, we could also do something like this:
+由于 `if` 语句要返回值，所以我们因该这样：
 
 ```ruby
 (1..100).each do |num|
@@ -206,8 +196,6 @@ Because the `if` returns a value, we could also do something like this:
 end
 ```
 
-Notice that we also changed `100.times` to `(1..100).each`, to make `num` go from 1 to 100 instead of from 0 to 99.
-
-Try running it.
-
-Awesome! We've conquered FizzBuzz.
+注意我们把 `100.times` 改为 `(1..100).each` 令数字从 1 到 100 而不是 0 到 99。
+试着运行一下。
+很好我们已经拿下 FizzBuzz 了。
